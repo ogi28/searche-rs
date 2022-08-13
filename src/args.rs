@@ -11,7 +11,7 @@ pub mod args {
         pub browser: Option<String>,
 
         /// The search engine to use, defaults to Google
-        #[clap(short, long, possible_values = &["google", "bing", "ddg", "ud", "wiki", "walmart"])]
+        #[clap(short, long, possible_values = &["google", "bing", "ddg", "ud", "wiki", "walmart", "netflix", "youtube", "amazon", "ebay", "aritzia", "reddit", "prime", "spotify"])]
         pub search_engine: Option<String>,
 
         /// Whether to use incognito mode, defaults to false

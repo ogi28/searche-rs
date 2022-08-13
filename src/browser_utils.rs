@@ -14,7 +14,11 @@ pub mod utils {
         match std::env::consts::OS {
             "linux" => {
                 if let Some(browser) = browser_options {
-                    browser
+                    if browser == "chrome" {
+                        "goole-chrome-stable".to_string()
+                    } else {
+                        browser
+                    }
                 } else {
                     get_linux_default_browser()
                 }
