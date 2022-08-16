@@ -1,9 +1,9 @@
 pub mod utils {
     use std::process::Command;
 
-    pub fn perform_search(browser: String, url: String, incognito: String) {
+    pub fn perform_search(browser: &String, url: &String, incognito: &String) {
         let browser_executable = if browser == "chrome" {
-            "google-chrome-stable".to_string()
+            "google-chrome-stable"
         } else {
             browser
         };
@@ -34,7 +34,6 @@ pub mod utils {
             "youtube" => "https://www.youtube.com/results?search_query=".to_string(),
             "amazon" => "https://www.amazon.ca/s?k=".to_string(),
             "ebay" => "https://www.ebay.ca/sch/i.html?_nkw=".to_string(),
-            "aritzia" => "https://www.aritzia.com/en/clothing/".to_string(),
             "reddit" => "https://www.reddit.com/search/?q=".to_string(),
             "prime" => "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=".to_string(),
             "spotify" => "https://open.spotify.com/search/".to_string(),

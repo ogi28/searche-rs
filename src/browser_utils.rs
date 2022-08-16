@@ -15,9 +15,11 @@ pub mod utils {
             "linux" => {
                 if let Some(browser) = browser_options {
                     if browser == "chrome" {
-                        "goole-chrome-stable".to_string()
+                        "google-chrome-stable".to_string()
+                    } else if browser == "default" {
+                        get_linux_default_browser()
                     } else {
-                        browser
+                        browser.clone()
                     }
                 } else {
                     get_linux_default_browser()
