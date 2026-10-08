@@ -37,6 +37,7 @@ pub mod utils {
             "reddit" => "https://www.reddit.com/search/?q=".to_string(),
             "prime" => "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=".to_string(),
             "spotify" => "https://open.spotify.com/search/".to_string(),
+            "ubereats" => "https://www.ubereats.com/ca/search?q=".to_string(),
             _ => "https://www.google.com/search?q=".to_string(),
         }
     }

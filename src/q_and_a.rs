@@ -1,4 +1,4 @@
-pub mod answer{
+pub mod answer {
 
     use requestty::questions;
     use requestty::Answers;
@@ -29,6 +29,7 @@ pub mod answer{
                     "Reddit",
                     "Prime",
                     "Spotify",
+                    "UberEats",
                 ]
             },
             Input {
